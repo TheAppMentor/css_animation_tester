@@ -3,29 +3,21 @@ body {
 }
 
 #spriteContainer {
-  background-image: url(/src/images/dinoSprite.png);
+  background-image: url(/src/images/run_1.png);
   border: "1px solid #ddd";
   border-radius: 30px;
   box-shadow: "inset 0px 1px 8px -3px #ABABAB";
   padding: 16;
   width: 500px;
   background-color: blue;
-  height: 800px;
+  height: 500px;
   display: block;
-  //animation-duration: 2s;
-  //animation-name: shrink;
-  //animation-iteration-count: 1000;
+  animation: jump 0.3s steps(8) infinite;
 }
 
-@keyframes shrink {
-  from {
-    width: 200px;
-    height: 100px;
-  }
-
-  to {
-    width: 100px;
-    height: 100px;
+@keyframes jump {
+  100% {
+    background-position: -7224px;
   }
 }
 
