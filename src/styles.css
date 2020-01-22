@@ -1,0 +1,31 @@
+body {
+  font-family: sans-serif;
+}
+
+#spriteContainer {
+  background-image: url(run_1.png);
+  border: "1px solid #ddd";
+  border-radius: 30px;
+  box-shadow: "inset 0px 1px 8px -3px #ABABAB";
+  padding: 16;
+  //background-color: yellow;
+  width: 200px;
+  background-color: blue;
+  height: 200px;
+  display: block;
+  //animation-duration: 2s;
+  //animation-name: shrink;
+  //animation-iteration-count: 1000;
+}
+
+@keyframes shrink {
+  from {
+    width: 200px;
+    height: 100px;
+  }
+
+  to {
+    width: 100px;
+    height: 100px;
+  }
+}
